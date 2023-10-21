@@ -1500,78 +1500,108 @@
     <!-- German Objectives -->
     <attachment name="objectiveAttachment1" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="France:Northwestern Europe:Germany:Poland:Czechoslovakia Hungary:Bulgaria Romania" count="6"/>
+      <option name="alliedOwnershipTerritories" value="Archangel:Baltic States:Belorussia:Buryatia S.S.R.:Caucasus:East Poland:Eastern Ukraine:Evenki National Okrug:Karelia S.S.R.:Kazakh S.S.R.:Novosibirsk:Russia:Soviet Far East:Stanovoj Chrebet:Ukraine:Urals:Yakut S.S.R." count="4"/>
     </attachment>
     <attachment name="objectiveAttachment2" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Baltic States:East Poland:Belorussia:Eastern Ukraine:Ukraine" count="3"/>
+      <option name="alliedOwnershipTerritories" value="Bulgaria Romania" count="1"/>
     </attachment>
     <attachment name="objectiveAttachment3" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Karelia S.S.R.:Caucasus" count="1"/>
+	  <option name="conditionType" value="AND"/>
+	  <option name="directPresenceTerritories" value="Anglo-Egypt Sudan:Egypt:French Equatorial Africa:French Madagascar:French West Africa:Italian Africa:Libya:Morocco Algeria:Rhodesia:Union of South Africa:" count="1"/>
+	  <option name="unitPresence" value="infantry:artillery:armour:fighter:bomber:AA Gun" count="2"/>
     </attachment>
-    <!-- Russian Objectives -->
+    <attachment name="objectiveAttachment4" attachTo="Germans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="objectiveValue" value="5"/>
+	  <option name="conditionType" value="AND"/>
+	  <option name="directPresenceTerritories" value="France" count="1"/>
+	  <option name="unitPresence" value="infantry:artillery:armour:fighter:bomber:AA Gun" count="5"/>
+    </attachment>
+  <!-- Russian Objectives -->
     <attachment name="objectiveAttachment1" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Archangel" count="1"/>
-      <option name="alliedExclusionTerritories" value="controlled"/>
+      <option name="alliedOwnershipTerritories" value="Urals" count="1"/>
     </attachment>
     <attachment name="objectiveAttachment2" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="10"/>
-      <option name="alliedOwnershipTerritories" value="Norway:Finland:Poland:Bulgaria Romania:Czechoslovakia Hungary:Balkans" count="3"/>
+      <option name="objectiveValue" value="3"/>
+      <option name="alliedOwnershipTerritories" value="Archangel" count="2"/>
+	  <option name="enemyExclusionTerritories" value="3 Sea Zone:4 Sea Zone"/>
+    </attachment>
+    <attachment name="objectiveAttachment3" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="objectiveValue" value="3"/>
+      <option name="RussianOwnershipTerritories" value="Caucasus" count="1"/>
+      <option name="when" value="before:RussianPurchase"/>
     </attachment>
     <!-- Japanese Objectives -->
     <attachment name="objectiveAttachment1" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Manchuria:Kiangsu:French Indo-China Thailand" count="3"/>
+      <option name="alliedOwnershipTerritories" value="Philippine Islands:Borneo:East Indies" count="3"/>
     </attachment>
     <attachment name="objectiveAttachment2" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Kwangtung:East Indies:Borneo:Philippine Islands:New Guinea:Solomon Islands" count="4"/>
+      <option name="alliedOwnershipTerritories" value="Midway:Wake Island:Solomon Islands" count="1"/>
     </attachment>
     <attachment name="objectiveAttachment3" attachTo="Japanese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Hawaiian Islands:Australia:India" count="1"/>
+      <option name="alliedOwnershipTerritories" value="Hawaiian Islands" count="1"/>
     </attachment>
     <!-- British Objectives -->
     <attachment name="objectiveAttachment1" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Caroline Islands:French Indo-China Thailand:Formosa:Iwo Jima:Japan:Okinawa" count="1"/>
+      <option name="alliedOwnershipTerritories" value="Gibraltar" count="1"/>
     </attachment>
     <attachment name="objectiveAttachment2" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Eastern Canada:Western Canada:Gibraltar:Egypt:Australia:Union of South Africa" count="6"/>
+      <option name="alliedOwnershipTerritories" value="United Kingdom:Eastern Canada:Union of South Africa:India:Australia." count="1"/>
     </attachment>
     <attachment name="objectiveAttachment3" attachTo="British" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="France:Balkans" count="1"/>
+      <option name="alliedOwnershipTerritories" value="United Kingdom" count="1"/>
+	  <option name="enemyExclusionTerritories" value="2 Sea Zone:3 Sea Zone:6 Sea Zone:7 Sea Zone:8 Sea Zone"/>
     </attachment>
     <!-- Italian Objectives -->
     <attachment name="objectiveAttachment1" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Egypt:Trans-Jordan:France:Gibraltar" count="3"/>
+      <option name="objectiveValue" value="3"/>
+      <option name="alliedOwnershipTerritories" value="Egypt:Trans-Jordan" count="2"/>
     </attachment>
     <attachment name="objectiveAttachment2" attachTo="Italians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Italy:Balkans:Morocco Algeria:Libya" count="4"/>
-      <option name="enemySurfaceExclusionTerritories" value="13 Sea Zone:14 Sea Zone:15 Sea Zone" count="3"/>
+      <option name="objectiveValue" value="3"/>
+      <option name="ItalianOwnershipTerritories" value="Italian Africa" count="1"/>
     </attachment>
-    <!-- American Objectives -->
+ <!-- American Objectives -->
     <attachment name="objectiveAttachment1" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="France" count="1"/>
-    </attachment>
-    <attachment name="objectiveAttachment2" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Philippine Islands" count="1"/>
-    </attachment>
-    <attachment name="objectiveAttachment3" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
       <option name="alliedOwnershipTerritories" value="Western United States:Eastern United States:Central United States" count="3"/>
     </attachment>
+    <attachment name="objectiveAttachment2" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="objectiveValue" value="5"/>
+      <option name="alliedOwnershipTerritories" value="Solomon Islands" count="1"/>
+    </attachment>
+    <attachment name="objectiveAttachment3" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="objectiveValue" value="5"/>
+      <option name="alliedOwnershipTerritories" value="Midway:Hawaiian Islands:Wake Island" count="3"/>
+    </attachment>
     <attachment name="objectiveAttachment4" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="objectiveValue" value="5"/>
-      <option name="alliedOwnershipTerritories" value="Midway:Wake Island:Hawaiian Islands:Solomon Islands" count="3"/>
+      <option name="alliedOwnershipTerritories" value="Iwo Jima:Caroline Islands:Okinawa" count="1"/>
+    </attachment>
+    <attachment name="objectiveAttachment5" attachTo="Americans" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="objectiveValue" value="5"/>
+      <option name="AmericanOwnershipTerritories" value="Morocco Algeria" count="1"/>
+    </attachment>
+	<!-- Chinese Objectives -->
+	<attachment name="objectiveAttachmentBurmaRoad" attachTo="Chinese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="India:Burma:Yunnan" count="3"/>
+    </attachment>
+<!-- Chinese Triggers and Conditions -->
+    <attachment name="conditionAttachmentBurmaRoad" attachTo="Chinese" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="alliedOwnershipTerritories" value="India:Burma:Yunnan" count="3"/>
+    </attachment>
+	<attachment name="triggerAttachmentBurmaRoadOpen" attachTo="Chinese" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachmentBurmaRoad"/>
+      <option name="when" value="before:chinesePurchase"/>
+	  <option name="purchase" value="artillery" count="1"/>
     </attachment>
     <!--  Rules Restrictions -->
     <!-- Chinese Rules -->
@@ -2122,34 +2152,38 @@
         				<br>
         				<b>National Objectives</b><br>
         				<i>Germany: Lebensraum-</i><br>
-        				+5 PUs if Axis control France, NW Europe, Germany, Czechoslovakia, Bulgaria, and Poland.<br>
-        				+5 PUs if Axis control 3 of Baltic States, East Poland, Ukraine, East Ukrain, and Belorussia.<br>
-        				+5 PUs if Axis control Karelia or Caucasus <br>
+        				+5 PUs if Axis control at least 4 Soviet territories.<br>
+        				+5 PUs if Axis control Bulgaria Romania.<br>
+        				+5 PUs if Axis have at least 5 units in France.<br>
+					+5 PUs if Germany has at least 2 units in Africa.<br>
         				<br>
         				<i>Japan: The Greater East Asia Coprosperity Sphere-</i><br>
-        				+5 PUs if Axis control Manchuria, Kiangsu, and French Indo China.<br>
-        				+5 PUs if Axis control 4 of Kwangtung, East Indies, Borneo, Philippine Islands, New Guinea and Solomon Islands.<br>
-        				+5 PUs if Axis control 1 of Hawaiian Islands, Australia, or India<br>
+        				+5 PUs if Axis control Philippine Islands, Borneo and East Indies.<br>
+        				+5 PUs if Axis control Midway, Wake Island or Solomon Islands.<br>
+        				+5 PUs if Axis control Hawaiian Islands.<br>
         				<br>
         				<i>Italy: Mare Nostrum-</i><br>
-        				+5 PUs if Axis control 3 of Egypt, Trans Jordan, France, and Gibraltar<br>
-        				+5 PUs if Axis control Italy, Balkans, Morocco and Libya AND no enemy surface ships in sea zones 13, 14, or 15.<br>
+        				+3 PUs if Axis control Egypt and Trans-Jordan.<br>
+        				+3 PUs if Italy controls Italian Africa.<br>
         				<br>
         				<i>United States: The Arsenal of Democracy-</i><br>
-        				+5 PUs if Allies control France.<br>
-        				+5 PUs if Allies control Philippine Islands.<br>
-        				+5 PUs Allies control W U.S., Central U.S., and E U.S.<br>
-        				+5 PUs if Allies control 3 of Midway, Wake Island, Hawaiian Islands, and Solomon Islands.<br>
+        				+5 PUs if the US player controls Western, Central and Eastern United States.<br>
+					+5 PUs if Allies control Solomon Islands.<br>
+        				+5 PUs if Allies control all of the following territories: Midway, Hawaiian Islands and Wake Island.<br>
+        				+5 PUs if Allies control at least one of the following territories: Iwo Jima, Caroline Islands, Okinawa.<br>
+        				+5 PUs if the US player controls Morocco Algeria.<br>
         				<br>
         				<i>United Kingdom: The British Empire-</i><br>
-        				+5 PUs if Allies control any territory originally controlled by Japan.<br>
-        				+5 PUs if Allies control E Canada, W Canada, Gibraltar, Egypt, Australia and South Africa.<br>
-        				+5 PUs if Allies control France or the Balkans.<br>
+        				+5 PUs if Allies control Gibraltar.<br>
+        				+5 PUs if Allies control Great Britain, Eastern Canada, South Africa, India and Australia.<br>
+        				+5 PUs if there are no enemy ships in the Sea Zones adjacent to United Kingdom.<br>
         				<br>
         				<i>Soviet Union: The Great Patriotic War-</i><br>
-        				+5 PUs if Soviets control Archangel and no allied forces in Soviet controlled territories.<br>
-        				+10 PUs if Allies control 3 of Norway, Finland, Poland, Bulgaria, Czechoslovakia, and Balkans.<br>
-        				
+        				+5 PUs if Allies control Urals.<br>
+        				+3 PUs if Allies control Archangel and there are no enemy ships in Sea Zones 3 and 4.<br>
+					+3 PUs if Soviets controlled Caucasus at the start of their turn.<br>
+					<i>China: The Burma Road-</i><br>
+        				+1 Artillery if the Allies control India, Burma and Yunnan.<br>
         				<br>
 						<i>China: Chinese Resistance & The Flying Tigers </i><br>
         				+1 infantry for every two territories controlled by China at the beginning of her turn.  These infantry must be place in a territory with less than three Chinese pieces.  <br>
@@ -2167,5 +2201,6 @@
 						Zero Pilot Mike McCaughey - integration
 						ComradeKev - custom code and rules
 						Seidelin - playtesting
+						Cloud7707 - New National Objectives
 						Veqryn - Minor updates for engine 1.2.5.x, and again for engine 1.3.x.x
 						-->
